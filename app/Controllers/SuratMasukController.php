@@ -105,6 +105,5 @@ class SuratMasukController extends BaseController
         ];
 
         $suratMasukModel->update($id_surat_masuk, $data);
-        return redirect()->to('/suratmasuk');
+        }
     }
-}
