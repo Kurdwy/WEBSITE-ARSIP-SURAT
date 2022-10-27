@@ -92,7 +92,7 @@ class SuratMasukController extends BaseController
             'asal_surat' => 'required',
             'keterangan_surat' => 'required',
         ])) {
-            return redirect()->to('/edit/' . $id_surat_masuk);
+            return redirect()->to('/suratmasuk');
         }
         $suratMasukModel = new SuratMasuk();
         $data = [
@@ -105,5 +105,6 @@ class SuratMasukController extends BaseController
         ];
 
         $suratMasukModel->update($id_surat_masuk, $data);
+        return redirect()->to('/suratmasuk');
         }
     }

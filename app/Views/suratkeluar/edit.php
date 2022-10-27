@@ -1,7 +1,7 @@
-<form action="/update/<?= $id_surat_masuk ?>" method="post" class="row g-3 ml-10 container border border-dark justify-content-center">
+<form action="/update/<?= $id_surat_keluar ?>" method="post" class="row g-3 ml-10 container border border-dark justify-content-center">
   <div class="form-group col-md-6">
-    <label for="no_surat">Nomor Surat</label>
-    <input type="text" name="no_surat" class="form-control" id="no_surat" value="<?= $no_surat ?>">
+    <label for="id_surat_keluar">Nomor Surat</label>
+    <input type="text" name="id_surat_keluar" class="form-control" id="id_surat_keluar" value="<?= $id_surat_keluar ?>">
   </div>
   <div class="form-group col-md-6">
     <label for="isi_surat">Isi Surat</label>

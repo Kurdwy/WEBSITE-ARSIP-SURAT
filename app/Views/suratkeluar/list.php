@@ -39,14 +39,14 @@
 
                                     $no = 1;
 
-                                    foreach ($suratmasuk as $srtmsk) :
+                                    foreach ($suratkeluar as $srtklr) :
 
                                     ?>
 
                                         <tr>
                                             <th scope="row"><?= $no ?></th>
-                                            <td><?= $srtmsk['no_surat'] ?></td>
-                                            <td><?= $srtmsk['isi_surat'] ?></td>
+                                            <td><?= $srtklr['id_surat_keluar'] ?></td>
+                                            <td><?= $srtklr['isi_surat'] ?></td>
                                         </tr>
 
                                     <?php
