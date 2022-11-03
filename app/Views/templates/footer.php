@@ -1,7 +1,7 @@
 <footer class="main-footer" class="container-fluid" style="text-align:center; background-color:#0275d8; color:white;">
     <!-- To the right -->
     <div>
-        <i>Donda Ajg</i>
+        <i>Donda & Kurniawan</i>
     </div>
     <!-- Default to the left -->
     <strong>Copyright &copy; 2022.</strong> All rights reserved.
