@@ -37,17 +37,17 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/suratmasuk', 'SuratMasukController::index');
-$routes->get('/create', 'SuratMasukController::create');
-$routes->post('/store', 'SuratMasukController::store');
-$routes->get('/edit/(:num)', 'SuratMasukController::edit/$1');
-$routes->post('/update/(:num)', 'SuratMasukController::update/$1');
-$routes->delete('/delete/(:num)', 'SuratMasukController::delete/$1');
+$routes->get('/suratmasuk/create', 'SuratMasukController::create');
+$routes->post('/suratmasuk/store', 'SuratMasukController::store');
+$routes->get('/suratmasuk/edit/(:num)', 'SuratMasukController::edit/$1');
+$routes->post('/suratmasuk/update/(:num)', 'SuratMasukController::update/$1');
+$routes->delete('/suratmasuk/delete/(:num)', 'SuratMasukController::delete/$1');
 $routes->get('/suratkeluar', 'SuratKeluarController::index');
-$routes->get('/create', 'SuratKeluarController::create');
-$routes->post('/store', 'SuratKeluarController::store');
-$routes->get('/edit/(:num)', 'SuratKeluarController::edit/$1');
-$routes->post('/update/(:num)', 'SuratKeluarController::update/$1');
-$routes->delete('/delete/(:num)', 'SuratKeluarController::delete/$1');
+$routes->get('/suratkeluar/create', 'SuratKeluarController::create');
+$routes->post('/suratkeluar/store', 'SuratKeluarController::store');
+$routes->get('/suratkeluar/edit/(:num)', 'SuratKeluarController::edit/$1');
+$routes->post('/suratkeluar/update/(:num)', 'SuratKeluarController::update/$1');
+$routes->delete('/suratkeluar/delete/(:num)', 'SuratKeluarController::delete/$1');
 $routes->get('/index', 'Pages::index');
 $routes->get('(:any)', 'Pages::view/$1');
 

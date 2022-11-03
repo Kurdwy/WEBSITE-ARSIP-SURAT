@@ -1,4 +1,4 @@
-<a href="/create" type="button" class="btn btn-primary mb-3">Tambah</a>
+<a href="/suratmasuk/create" type="button" class="btn btn-primary mb-3">Tambah</a>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -35,8 +35,8 @@
         <td><?= $srtmsk['updated_at'] ?></td>
         <td>
           <div class="d-flex">
-            <a class="btn btn-warning mr-3" href="/edit/<?= $srtmsk['id_surat_masuk'] ?>">Edit</a>
-            <form action="/delete/<?= $srtmsk['id_surat_masuk'] ?>" method="post">
+            <a class="btn btn-warning mr-3" href="/suratmasuk/edit/<?= $srtmsk['id_surat_masuk'] ?>">Edit</a>
+            <form action="/suratmasuk/delete/<?= $srtmsk['id_surat_masuk'] ?>" method="post">
               <input name="_method" value="DELETE" type="hidden">
               <button type="submit" class="btn btn-danger">Delete</button>
             </form>

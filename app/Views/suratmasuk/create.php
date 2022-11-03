@@ -1,4 +1,4 @@
-<form action="/store" method="post" class="row g-3 ml-10 container border border-dark justify-content-center">
+<form action="/suratmasuk/store" method="post" class="row g-3 ml-10 container border border-dark justify-content-center">
   <div class="form-group col-md-6">
     <label for="no_surat">Nomor Surat</label>
     <input type="text" name="no_surat" class="form-control" id="no_surat">
