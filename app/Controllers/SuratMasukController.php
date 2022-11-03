@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\SuratMasuk;
+use App\Models\Instansi;
+
 
 class SuratMasukController extends BaseController
 {
@@ -11,10 +13,13 @@ class SuratMasukController extends BaseController
     {
         $suratMasukModel = new SuratMasuk();
         $suratmasuk = $suratMasukModel->findAll();
+        $instansiModel = new Instansi();
+        $instansi = $instansiModel->findAll();
 
         $data = [
             'title' => 'Surat Masuk',
-            'suratmasuk' => $suratmasuk
+            'suratmasuk' => $suratmasuk,
+            'instansi' => $instansi
         ];
 
         return view('templates/header', $data)
@@ -24,8 +29,15 @@ class SuratMasukController extends BaseController
 
     public function create()
     {
+        $suratMasukModel = new SuratMasuk();
+        $suratmasuk = $suratMasukModel->findAll();
+        $instansiModel = new Instansi();
+        $instansi = $instansiModel->findAll();
+
         $data = [
-            'title' => 'Create Surat Masuk'
+            'title' => 'Create Surat Masuk',
+            'suratmasuk' => $suratmasuk,
+            'instansi' => $instansi
         ];
 
         return view('templates/header', $data)
@@ -40,7 +52,7 @@ class SuratMasukController extends BaseController
             'no_surat' => 'required',
             'tgl_terima_surat' => 'required',
             'tgl_surat' => 'required',
-            'asal_surat' => 'required',
+            'id_instansi' => 'required',
             'isi_surat' => 'required',
             'keterangan_surat' => 'required',
         ])) {
@@ -51,7 +63,7 @@ class SuratMasukController extends BaseController
             'no_surat' => $this->request->getPost('no_surat'),
             'tgl_terima_surat' => $this->request->getPost('tgl_terima_surat'),
             'tgl_surat' => $this->request->getPost('tgl_surat'),
-            'asal_surat' => $this->request->getPost('asal_surat'),
+            'id_instansi' => $this->request->getPost('id_instansi'),
             'isi_surat' => $this->request->getPost('isi_surat'),
             'keterangan_surat' => $this->request->getPost('keterangan_surat')
         ];
@@ -72,7 +84,7 @@ class SuratMasukController extends BaseController
     {
         $suratMasukModel = new SuratMasuk();
         $suratmasuk = $suratMasukModel->find($id_surat_masuk);
-
+        //$instansiId = $suratMasukModel->find($id_instansi);
         $data = [
             'title' => 'Edit Surat Masuk'
         ];
@@ -89,7 +101,7 @@ class SuratMasukController extends BaseController
             'isi_surat' => 'required',
             'tgl_terima_surat' => 'required',
             'tgl_surat' => 'required',
-            'asal_surat' => 'required',
+            'id_instansi' => 'required',
             'keterangan_surat' => 'required',
         ])) {
             return redirect()->to('/suratmasuk');
@@ -100,7 +112,7 @@ class SuratMasukController extends BaseController
             'isi_surat' => $this->request->getVar('isi_surat'),
             'tgl_terima_surat' => $this->request->getVar('tgl_terima_surat'),
             'tgl_surat' => $this->request->getVar('tgl_surat'),
-            'asal_surat' => $this->request->getVar('asal_surat'),
+            'id_instansi' => $this->request->getVar('id_instansi'),
             'keterangan_surat' => $this->request->getVar('keterangan_surat'),
         ];
 

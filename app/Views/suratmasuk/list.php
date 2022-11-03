@@ -6,7 +6,7 @@
       <th scope="col">Nomor Surat</th>
       <th scope="col">Tanggal Terima Surat</th>
       <th scope="col">Tanggal Surat</th>
-      <th scope="col">Asal Surat</th>
+      <th scope="col">ID Instansi Asal Surat</th>
       <th scope="col">Isi Surat</th>
       <th scope="col">Keterangan Surat</th>
       <th scope="col">Created_At</th>
@@ -28,7 +28,7 @@
         <td><?= $srtmsk['no_surat'] ?></td>
         <td><?= $srtmsk['tgl_terima_surat'] ?></td>
         <td><?= $srtmsk['tgl_surat'] ?></td>
-        <td><?= $srtmsk['asal_surat'] ?></td>
+        <td><?= $srtmsk['id_instansi'] ?></td>
         <td><?= $srtmsk['isi_surat'] ?></td>
         <td><?= $srtmsk['keterangan_surat'] ?></td>
         <td><?= $srtmsk['created_at'] ?></td>

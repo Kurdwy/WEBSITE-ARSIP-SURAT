@@ -4,16 +4,16 @@
     <input type="text" name="no_surat" class="form-control" id="no_surat" value="<?= $no_surat ?>">
   </div>
   <div class="form-group col-md-6">
+    <label for="id_instansi">ID Instansi Asal Surat</label>
+    <input type="text" name="id_instansi" class="form-control" id="id_instansi" value="<?= $id_instansi ?>">
+  </div>
+  <div class="form-group col-md-6">
     <label for="tgl_terima_surat">Tanggal Terima Surat</label>
     <input type="Date" name="tgl_terima_surat" class="form-control" id="tgl_terima_surat" value="<?= $tgl_terima_surat ?>">
   </div>
   <div class="form-group col-md-6">
     <label for="tgl_surat">Tanggal Surat</label>
     <input type="Date" name="tgl_surat" class="form-control" id="tgl_surat" value="<?= $tgl_surat ?>">
-  </div>
-  <div class="form-group col-md-6">
-    <label for="asal_surat">Asal Surat</label>
-    <input type="text" name="asal_surat" class="form-control" id="asal_surat" value="<?= $asal_surat ?>">
   </div>
   <div class="form-group col-md-6">
     <label for="isi_surat">Isi Surat</label>
