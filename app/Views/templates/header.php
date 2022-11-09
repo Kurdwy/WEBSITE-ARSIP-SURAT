@@ -123,7 +123,7 @@
             <div class="container-bg mt-4">
               <div class="card-bg">
                 <li class="nav-item">
-                  <a href="/suratmasuk/list.php" class="nav-link">
+                  <a href="/suratmasuk" class="nav-link">
                     <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                     <p style="color:#ffffff;">
                       Surat Masuk
@@ -134,11 +134,13 @@
               </div>
             </div>
 
+            <!-- Divider -->
+            <!-- <hr class="sidebar-divider d-none d-md-block"> -->
 
             <div class="container-bg mt-2">
               <div class="card-bg">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/suratkeluar" class="nav-link">
                     <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                     <p style="color:#ffffff;">
                       Surat Keluar

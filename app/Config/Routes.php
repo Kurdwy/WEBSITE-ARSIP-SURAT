@@ -35,6 +35,10 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('/landingpage', 'LandingPageController::index');
+
+$routes->get('/login', 'LoginController::index');
+
 $routes->get('/', 'Home::index');
 $routes->get('/suratmasuk', 'SuratMasukController::index');
 $routes->get('/suratmasuk/create', 'SuratMasukController::create');
@@ -42,6 +46,7 @@ $routes->post('/suratmasuk/store', 'SuratMasukController::store');
 $routes->get('/suratmasuk/edit/(:num)', 'SuratMasukController::edit/$1');
 $routes->post('/suratmasuk/update/(:num)', 'SuratMasukController::update/$1');
 $routes->delete('/suratmasuk/delete/(:num)', 'SuratMasukController::delete/$1');
+
 $routes->get('/suratkeluar', 'SuratKeluarController::index');
 $routes->get('/suratkeluar/create', 'SuratKeluarController::create');
 $routes->post('/suratkeluar/store', 'SuratKeluarController::store');
