@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/landingpage', 'LandingPageController::index');
 
+$routes->get('/dashboard', 'DashboardController::index');
+
 $routes->get('/login', 'LoginController::index');
 
 $routes->get('/register', 'RegisterController::index');

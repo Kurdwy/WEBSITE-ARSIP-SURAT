@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Lettchive</title>
+    <link rel="icon shortcut" href="/Assets/img/logo-lettchive-with-bg.png">
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/Assets/startbootstrap/assets/favicon.ico" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -40,7 +40,7 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1>
+                    <h1 class="text-white font-weight-bold">Letter Archive </h1>
                     <hr class="divider" style="background-color:#0275d8;" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">

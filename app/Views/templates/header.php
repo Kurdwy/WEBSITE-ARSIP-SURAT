@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>INI WEBSITE</title>
-  <link rel="icon shortcut" href="/Assets/admin-lte/img/Siber-ket-with-bg.png">
+  <title>Lettchive</title>
+  <link rel="icon shortcut" href="/Assets/img/logo-lettchive-with-bg.png">
 
 
   <!-- Google Font: Source Sans Pro -->
@@ -84,8 +84,8 @@
     <aside class="main-sidebar" style="background-color: #ffffff;">
       <!-- Brand Logo -->
       <a class="brand-link">
-        <img src="<?php echo base_url('/Assets/admin-lte/img/siber-ket-with-bg.png') ?>" alt="HILANG" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <h4 class="brand-text font-weight-light"><b>Ini Website</b></h4>
+        <img src="<?php echo base_url('/Assets/img/logo-lettchive-with-bg.png') ?>" alt="HILANG" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <h4 class="brand-text font-weight-bold"><b>Lettchive</b></h4>
       </a>
 
       <!-- Sidebar -->
@@ -109,7 +109,7 @@
             <div class="container-bg">
               <div class="card-bg">
                 <li class="nav-item">
-                  <a href="/suratmasuk/list.php" class="nav-link">
+                  <a href="/dashboard" class="nav-link">
                     <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                     <p style="color:#ffffff;">
                       DASHBOARD
