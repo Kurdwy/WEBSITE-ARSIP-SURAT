@@ -44,8 +44,8 @@
                     <hr class="divider" style="background-color:#0275d8;" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-                    <a class="btn btn-primary btn-xl" style="background-color:#0275d8; color:white;" href="#about">Find Out More</a>
+                    <p class="text-white-75 mb-5">Lorem ipsum dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>
+                    <a class="btn btn-primary btn-xl" style="background-color:#0275d8; color:white;" href="/login">Login</a>
                 </div>
             </div>
         </div>
@@ -57,8 +57,8 @@
                 <div class="col-lg-8 text-center" style="background-color:#0275d8;">
                     <h2 class="text-white mt-0">We've got what you need!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                    <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                    <p class="text-white-75 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                 </div>
             </div>
         </div>

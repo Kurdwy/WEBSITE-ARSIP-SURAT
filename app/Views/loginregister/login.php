@@ -1,4 +1,5 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 <section class="vh-100">
     <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -9,16 +10,21 @@
                 <form>
                     <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                         <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+
                         <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="fa fa-google"></i>
                         </button>
 
                         <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fa fa-facebook-f"></i>
                         </button>
 
                         <button type="button" class="btn btn-primary btn-floating mx-1">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fa fa-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <i class="fa fa-linkedin"></i>
                         </button>
                     </div>
 
@@ -51,7 +57,7 @@
 
                     <div class="text-center text-lg-start mt-4 pt-2">
                         <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!" class="link-danger">Register</a></p>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register" class="link-danger">Register</a></p>
                     </div>
 
                 </form>
@@ -68,16 +74,16 @@
         <!-- Right -->
         <div>
             <a href="#!" class="text-white me-4">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fa fa-google"></i>
             </a>
             <a href="#!" class="text-white me-4">
-                <i class="fab fa-twitter"></i>
+                <i class="fa fa-facebook-f"></i>
             </a>
             <a href="#!" class="text-white me-4">
-                <i class="fab fa-google"></i>
+                <i class="fa fa-twitter"></i>
             </a>
             <a href="#!" class="text-white">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fa fa-linkedin"></i>
             </a>
         </div>
         <!-- Right -->
