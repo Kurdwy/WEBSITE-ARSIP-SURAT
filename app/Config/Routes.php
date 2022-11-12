@@ -43,6 +43,8 @@ $routes->get('/login', 'LoginController::index');
 
 $routes->get('/register', 'RegisterController::index');
 
+$routes->get('/profil', 'ProfilController::index');
+
 $routes->get('/', 'Home::index');
 $routes->get('/suratmasuk', 'SuratMasukController::index');
 $routes->get('/suratmasuk/create', 'SuratMasukController::create');
