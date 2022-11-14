@@ -23,7 +23,7 @@
             <div class="card-header">
 
               <a href="/suratmasuk/create" type="button" class="btn btn-primary mb-3">Tambah</a>
-              <table class="table table-striped">
+              <table class="table table-striped table-hover">
                 <thead>
                   <tr>
                     <th scope="col">No</th>

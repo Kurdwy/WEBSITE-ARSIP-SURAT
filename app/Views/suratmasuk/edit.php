@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -27,6 +28,10 @@
           <div class="form-group col-md-6">
             <label for="keterangan_surat">Keterangan Surat</label>
             <textarea class="form-control" name="keterangan_surat" aria-label="With textarea" id="keterangan_surat" value="<?= $keterangan_surat ?>" autocomplete="off"></textarea>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="formFile">Softcopy Surat</label>
+            <input class="form-control" type="file" id="formFile">
           </div>
           <button type="submit" class="btn btn-primary col-md-4 mb-3">Submit</button>
         </form>

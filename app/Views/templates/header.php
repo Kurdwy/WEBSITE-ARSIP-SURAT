@@ -9,7 +9,7 @@
 
 
   <!-- Google Font: Source Sans Pro -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
   <link rel="stylesheet" href="<?php echo base_url('/Assets/admin-lte/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') ?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url('/Assets/admin-lte/plugins/fontawesome-free/css/all.min.css') ?>">
@@ -49,7 +49,9 @@
       <ul class="navbar-nav ml-auto">
         <div class="user-panel d-flex">
           <div class="image mr-2">
-            <img src="<?php echo base_url('/Assets/admin-lte/dist/img/avatar5.png') ?>" class="img-circle elevation-2" alt="User Image">
+            <a href="/profil">
+              <img src="<?php echo base_url('/Assets/admin-lte/dist/img/avatar5.png') ?>" class="img-circle elevation-2" alt="User Image">
+            </a>
           </div>
           <!-- <div class="info">
             <a href="#" class="d-block">FARHAN KEBAB</a>
@@ -85,7 +87,7 @@
       <!-- Brand Logo -->
       <a class="brand-link">
         <img src="<?php echo base_url('/Assets/img/logo-lettchive-with-bg.png') ?>" alt="HILANG" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <h4 class="brand-text font-weight-bold"><b>Lettchive</b></h4>
+        <h4 class="font-weight-bold"><b>Lettchive</b></h4>
       </a>
 
       <!-- Sidebar -->
