@@ -60,7 +60,10 @@ $routes->get('/suratkeluar/edit/(:num)', 'SuratKeluarController::edit/$1');
 $routes->post('/suratkeluar/update/(:num)', 'SuratKeluarController::update/$1');
 $routes->delete('/suratkeluar/delete/(:num)', 'SuratKeluarController::delete/$1');
 $routes->get('/index', 'Pages::index');
+$routes->post('/login/process', 'LoginController::process');
 $routes->get('(:any)', 'Pages::view/$1');
+$routes->get('/login', 'LoginController::index');
+
 
 
 /*
