@@ -48,11 +48,11 @@
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <div class="user-panel d-flex">
-          <div class="image mr-2">
+          <!-- <div class="image mr-2">
             <a href="/profil">
-              <img src="<?php echo base_url('/Assets/admin-lte/dist/img/avatar5.png') ?>" class="img-circle elevation-2" alt="User Image">
+              <img src="" class="img-circle elevation-2" alt="Admin Image">
             </a>
-          </div>
+          </div> -->
           <!-- <div class="info">
             <a href="#" class="d-block">FARHAN KEBAB</a>
           </div> -->
@@ -146,6 +146,20 @@
                     <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                     <p style="color:#ffffff;">
                       Surat Keluar
+                      <!-- <i class="fas fa-angle-left right"></i> -->
+                    </p>
+                  </a>
+                </li>
+              </div>
+            </div>
+
+            <div class="container-bg mt-4">
+              <div class="card-bg">
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                    <p style="color:#ffffff;">
+                      LOGOUT
                       <!-- <i class="fas fa-angle-left right"></i> -->
                     </p>
                   </a>

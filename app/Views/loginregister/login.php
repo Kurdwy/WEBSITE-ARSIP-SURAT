@@ -37,26 +37,27 @@
                         <button type="button" class="btn btn-primary btn-floating mx-1">
                             <i class="fa fa-linkedin"></i>
                         </button>
-                    </div>
+                    </div> -->
 
                     <div class="divider d-flex align-items-center my-4">
-                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                        <p class="text-center fw-bold mx-3 mb-0">Login</p>
                     </div>
 
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter a valid email address" />
                         <label class="form-label" for="form3Example3">Email address</label>
+                        <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter a valid email address" />
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-3">
                         <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Enter password" />
                         <label class="form-label" for="form3Example4">Password</label>
+                        <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" />
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <!-- Checkbox -->
+                    <!-- <div class="d-flex justify-content-between align-items-center">
                         <div class="form-check mb-0">
                             <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
                             <label class="form-check-label" for="form2Example3">
@@ -64,7 +65,7 @@
                             </label>
                         </div>
                         <a href="#!" class="text-body">Forgot password?</a>
-                    </div>
+                    </div> -->
 
                     <div class="text-center text-lg-start mt-4 pt-2">
                         <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
@@ -75,14 +76,14 @@
             </div>
         </div>
     </div>
-    <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-        <!-- Copyright -->
+    <!-- <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+    
         <div class="text-white mb-3 mb-md-0 justify-content-center">
             Copyright © 2022. All rights reserved.
         </div>
-        <!-- Copyright -->
+    
 
-        <!-- Right -->
+        
         <div>
             <a href="#!" class="text-white me-4">
                 <i class="fa fa-google"></i>
@@ -97,8 +98,8 @@
                 <i class="fa fa-linkedin"></i>
             </a>
         </div>
-        <!-- Right -->
-    </div>
+      
+    </div> -->
 </section>
 
 <style>
