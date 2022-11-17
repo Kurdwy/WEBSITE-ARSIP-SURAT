@@ -45,7 +45,7 @@ $routes->get('/register', 'RegisterController::index');
 
 $routes->get('/profil', 'ProfilController::index');
 
-$routes->get('/', 'Home::index');
+$routes->get('/', 'LandingPageController::index');
 $routes->get('/suratmasuk', 'SuratMasukController::index');
 $routes->get('/suratmasuk/create', 'SuratMasukController::create');
 $routes->post('/suratmasuk/store', 'SuratMasukController::store');
@@ -59,10 +59,11 @@ $routes->post('/suratkeluar/store', 'SuratKeluarController::store');
 $routes->get('/suratkeluar/edit/(:num)', 'SuratKeluarController::edit/$1');
 $routes->post('/suratkeluar/update/(:num)', 'SuratKeluarController::update/$1');
 $routes->delete('/suratkeluar/delete/(:num)', 'SuratKeluarController::delete/$1');
-$routes->get('/index', 'Pages::index');
+$routes->get('/index', 'LandingPageController::index');
 $routes->post('/login/process', 'LoginController::process');
 $routes->get('(:any)', 'Pages::view/$1');
 $routes->get('/login', 'LoginController::index');
+$routes->get('/logout', 'LoginController::logout');
 
 
 

@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Data Surat Keluar</h1>
+          <h1>Data Surat Masuk</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -27,14 +27,11 @@
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Nomor Surat</th>
-                    <th scope="col">Tanggal Terima Surat</th>
-                    <th scope="col">Tanggal Surat</th>
                     <th scope="col">ID Instansi Asal Surat</th>
-                    <th scope="col">Isi Surat</th>
-                    <th scope="col">Keterangan Surat</th>
-                    <th scope="col">Created_At</th>
-                    <th scope="col">Updated_At</th>
+                    <th scope="col">Nomor Surat</th>
+                    <th scope="col">Asal Surat</th>
+                    <th scope="col">Tanggal Surat</th>
+                    <th scope="col">Tanggal Terima Surat</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
@@ -49,14 +46,11 @@
 
                     <tr>
                       <th scope="row"><?= $no ?></th>
-                      <td><?= $srtmsk['no_surat'] ?></td>
-                      <td><?= $srtmsk['tgl_terima_surat'] ?></td>
-                      <td><?= $srtmsk['tgl_surat'] ?></td>
                       <td><?= $srtmsk['id_instansi'] ?></td>
-                      <td><?= $srtmsk['isi_surat'] ?></td>
-                      <td><?= $srtmsk['keterangan_surat'] ?></td>
-                      <td><?= $srtmsk['created_at'] ?></td>
-                      <td><?= $srtmsk['updated_at'] ?></td>
+                      <td><?= $srtmsk['no_surat'] ?></td>
+                      <td><?= $srtmsk['asal_surat'] ?></td>
+                      <td><?= $srtmsk['tgl_surat'] ?></td>
+                      <td><?= $srtmsk['tgl_terima_surat'] ?></td>
                       <td>
                         <div class="d-flex">
                           <a class="btn btn-warning mr-3" href="/suratmasuk/edit/<?= $srtmsk['id_surat_masuk'] ?>">Edit</a>

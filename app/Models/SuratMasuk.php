@@ -9,14 +9,14 @@ class SuratMasuk extends Model
     protected $table            = 'surat_masuk';
     protected $primaryKey       = 'id_surat_masuk';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['no_surat', 'tgl_terima_surat', 'tgl_surat', 'asal_surat', 'isi_surat', 'keterangan_surat', 'id_instansi'];
+    protected $allowedFields    = ['no_surat', 'tgl_terima_surat', 'tgl_surat', 'asal_surat', 'id_instansi'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    
+
     // protected $deletedField  = 'deleted_at';
 
     // // Validation

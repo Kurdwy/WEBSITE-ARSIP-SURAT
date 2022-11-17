@@ -2,11 +2,11 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-  <h2><b>Mohon Input Dengan Benar</b></h2>
+    <h2><b>Mohon Input Dengan Benar</b></h2>
     <div class="card">
-      <div class="card-header">
+      <!-- <div class="card-header">
         <h3>Masukan Data Dengan Benar!</h3>
-      </div>
+      </div> -->
       <div class="container-fluid mt-1">
         <form action="/suratmasuk/store" method="post" class="row g-3 ml-10 container justify-content-center">
           <div class="form-group col-md-6">
@@ -25,6 +25,10 @@
     ?> -->
             <input type="text" name="id_instansi" class="form-control" id="id_instansi" autocomplete="off">
           </div>
+          <div class="form-group col-md-12">
+            <label for="asal_surat">Asal Surat</label>
+            <textarea class="form-control" name="asal_surat" aria-label="With textarea" id="asal_surat" autocomplete="off"></textarea>
+          </div>
           <div class="form-group col-md-6">
             <label for="tgl_terima_surat">Tanggal Terima Surat</label>
             <input type="Date" name="tgl_terima_surat" class="form-control" id="tgl_terima_surat" autocomplete="off">
@@ -37,18 +41,11 @@
     <label for="asal_surat">Asal Surat</label>
     <input type="text" name="asal_surat" class="form-control" id="asal_surat">
   </div> -->
-          <div class="form-group col-md-6">
-            <label for="isi_surat">Isi Surat</label>
-            <textarea class="form-control" name="isi_surat" aria-label="With textarea" id="isi_surat" autocomplete="off"></textarea>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="keterangan_surat">Keterangan Surat</label>
-            <textarea class="form-control" name="keterangan_surat" aria-label="With textarea" id="keterangan_surat" autocomplete="off"></textarea>
-          </div>
-          <div class="form-group col-md-12">
+
+          <!-- <div class="form-group col-md-12">
             <label for="formFile">Softcopy Surat</label>
             <input class="form-control" type="file" id="formFile">
-          </div>
+          </div> -->
           <button type="submit" class="btn btn-primary col-md-4 mb-3">Submit</button>
         </form>
       </div>

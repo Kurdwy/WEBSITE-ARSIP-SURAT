@@ -47,11 +47,14 @@ class SuratKeluarController extends BaseController
 
     public function store()
     {
-        $koneksi = mysqli_connect("localhost", "root", "", "teoweblanjut");
         if (!$this->validate([
             'no_surat' => 'required',
             'id_instansi' => 'required',
-            'isi_surat' => 'required',
+            'tujuan_surat' => 'required',
+            'pengirim_surat' => 'required',
+            'tgl_kirim_surat' => 'required',
+            'tgl_surat' => 'required',
+
         ])) {
             return redirect()->to('/create');
         }
@@ -59,7 +62,11 @@ class SuratKeluarController extends BaseController
         $data = [
             'no_surat' => $this->request->getPost('no_surat'),
             'id_instansi' => $this->request->getPost('id_instansi'),
-            'isi_surat' => $this->request->getPost('isi_surat'),
+            'tujuan_surat' => $this->request->getPost('tujuan_surat'),
+            'pengirim_surat' => $this->request->getPost('pengirim_surat'),
+            'tgl_kirim_surat' => $this->request->getPost('tgl_kirim_surat'),
+            'tgl_surat' => $this->request->getPost('tgl_surat'),
+
         ];
 
         $suratKeluarModel->save($data);
@@ -92,19 +99,25 @@ class SuratKeluarController extends BaseController
     {
         if (!$this->validate([
             'no_surat' => 'required',
-            'isi_surat' => 'required',
             'id_instansi' => 'required',
+            'tujuan_surat' => 'required',
+            'pengirim_surat' => 'required',
+            'tgl_kirim_surat' => 'required',
+            'tgl_surat' => 'required',
         ])) {
             return redirect()->to('/suratkeluar');
         }
         $suratKeluarModel = new SuratKeluar();
         $data = [
-            'no_surat' => $this->request->getVar('no_surat'),
-            'isi_surat' => $this->request->getVar('isi_surat'),
-            'id_instansi' => $this->request->getVar('id_instansi'),
+            'no_surat' => $this->request->getPost('no_surat'),
+            'id_instansi' => $this->request->getPost('id_instansi'),
+            'tujuan_surat' => $this->request->getPost('tujuan_surat'),
+            'pengirim_surat' => $this->request->getPost('pengirim_surat'),
+            'tgl_kirim_surat' => $this->request->getPost('tgl_kirim_surat'),
+            'tgl_surat' => $this->request->getPost('tgl_surat'),
         ];
 
         $suratKeluarModel->update($id_surat_keluar, $data);
         return redirect()->to('/suratkeluar');
-        }
     }
+}

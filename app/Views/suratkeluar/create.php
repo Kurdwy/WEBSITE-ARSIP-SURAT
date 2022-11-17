@@ -15,12 +15,20 @@
             <input type="text" name="id_instansi" class="form-control" id="id_instansi" autocomplete="off">
           </div>
           <div class="form-group col-md-6">
-            <label for="tujuansurat">Tujuan Surat</label>
-            <input type="text" name="tujuansurat" class="form-control" id="tujuansurat" autocomplete="off">
+            <label for="tujuan_surat">Tujuan Surat</label>
+            <input type="text" name="tujuan_surat" class="form-control" id="tujuan_surat" autocomplete="off">
           </div>
           <div class="form-group col-md-6">
-            <label for="isi_surat">Isi Surat</label>
-            <textarea class="form-control" name="isi_surat" aria-label="With textarea" id="isi_surat" autocomplete="off"></textarea>
+            <label for="pengirim_surat">Pengirim Surat</label>
+            <textarea class="form-control" name="pengirim_surat" aria-label="With textarea" id="pengirim_surat" autocomplete="off"></textarea>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="tgl_kirim_surat">Tanggal Kirim Surat</label>
+            <input type="Date" name="tgl_kirim_surat" class="form-control" id="tgl_kirim_surat" autocomplete="off">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="tgl_surat">Tanggal Surat</label>
+            <input type="Date" name="tgl_surat" class="form-control" id="tgl_surat" autocomplete="off">
           </div>
           <button type="submit" class="btn btn-primary col-md-4 mb-3">Submit</button>
         </form>

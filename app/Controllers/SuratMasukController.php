@@ -53,8 +53,7 @@ class SuratMasukController extends BaseController
             'tgl_terima_surat' => 'required',
             'tgl_surat' => 'required',
             'id_instansi' => 'required',
-            'isi_surat' => 'required',
-            'keterangan_surat' => 'required',
+            'asal_surat' => 'required',
         ])) {
             return redirect()->to('/create');
         }
@@ -64,8 +63,7 @@ class SuratMasukController extends BaseController
             'tgl_terima_surat' => $this->request->getPost('tgl_terima_surat'),
             'tgl_surat' => $this->request->getPost('tgl_surat'),
             'id_instansi' => $this->request->getPost('id_instansi'),
-            'isi_surat' => $this->request->getPost('isi_surat'),
-            'keterangan_surat' => $this->request->getPost('keterangan_surat')
+            'asal_surat' => $this->request->getPost('asal_surat'),
         ];
 
         $suratMasukModel->save($data);
@@ -98,25 +96,23 @@ class SuratMasukController extends BaseController
     {
         if (!$this->validate([
             'no_surat' => 'required',
-            'isi_surat' => 'required',
+            'asal_surat' => 'required',
             'tgl_terima_surat' => 'required',
             'tgl_surat' => 'required',
             'id_instansi' => 'required',
-            'keterangan_surat' => 'required',
         ])) {
             return redirect()->to('/suratmasuk');
         }
         $suratMasukModel = new SuratMasuk();
         $data = [
             'no_surat' => $this->request->getVar('no_surat'),
-            'isi_surat' => $this->request->getVar('isi_surat'),
+            'asal_surat' => $this->request->getVar('asal_surat'),
             'tgl_terima_surat' => $this->request->getVar('tgl_terima_surat'),
             'tgl_surat' => $this->request->getVar('tgl_surat'),
             'id_instansi' => $this->request->getVar('id_instansi'),
-            'keterangan_surat' => $this->request->getVar('keterangan_surat'),
         ];
 
         $suratMasukModel->update($id_surat_masuk, $data);
         return redirect()->to('/suratmasuk');
-        }
     }
+}

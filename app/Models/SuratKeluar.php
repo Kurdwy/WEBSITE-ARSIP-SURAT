@@ -9,7 +9,7 @@ class SuratKeluar extends Model
     protected $table            = 'surat_keluar';
     protected $primaryKey       = 'id_surat_keluar';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['id_surat_Keluar', 'isi_surat', 'id_instansi', 'tujuansurat', 'no_surat'];
+    protected $allowedFields    = ['id_surat_Keluar', 'id_instansi', 'tujuan_surat', 'no_surat', 'pengirim_surat', 'tgl_kirim_surat', 'tgl_surat',];
 
     // Dates
     protected $useTimestamps = true;

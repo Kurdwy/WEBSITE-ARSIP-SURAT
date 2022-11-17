@@ -27,10 +27,12 @@
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Nomor Surat</th>
                     <th scope="col">ID Instansi Asal Surat</th>
+                    <th scope="col">Nomor Surat</th>
                     <th scope="col">Tujuan Surat</th>
-                    <th scope="col">Isi Surat</th>
+                    <th scope="col">Pengirim Surat</th>
+                    <th scope="col">Tanggal Surat</th>
+                    <th scope="col">Tanggal Kirim Surat</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
@@ -45,10 +47,13 @@
 
                     <tr>
                       <th scope="row"><?= $no ?></th>
-                      <td><?= $srtklr['no_surat'] ?></td>
                       <td><?= $srtklr['id_instansi'] ?></td>
-                      <td><?= $srtklr['tujuansurat'] ?></td>
-                      <td><?= $srtklr['isi_surat'] ?></td>
+                      <td><?= $srtklr['no_surat'] ?></td>
+                      <td><?= $srtklr['tujuan_surat'] ?></td>
+                      <td><?= $srtklr['pengirim_surat'] ?></td>
+                      <td><?= $srtklr['tgl_surat'] ?></td>
+                      <td><?= $srtklr['tgl_kirim_surat'] ?></td>
+
                       <td>
                         <div class="d-flex">
                           <a class="btn btn-warning mr-3" href="/suratkeluar/edit/<?= $srtklr['id_surat_keluar'] ?>">Edit</a>
