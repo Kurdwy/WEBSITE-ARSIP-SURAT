@@ -2,6 +2,7 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
+    <h2><b>Mohon Input Dengan Benar</b></h2>
     <div class="card">
       <div class="container-fluid">
         <form action="/suratkeluar/store" method="post" class="row g-3 ml-10 container justify-content-center">
@@ -13,7 +14,11 @@
             <label for="id_instansi">ID Instansi Asal Surat</label>
             <input type="text" name="id_instansi" class="form-control" id="id_instansi" autocomplete="off">
           </div>
-          <div class="form-group col-md-12">
+          <div class="form-group col-md-6">
+            <label for="tujuansurat">Tujuan Surat</label>
+            <input type="text" name="tujuansurat" class="form-control" id="tujuansurat" autocomplete="off">
+          </div>
+          <div class="form-group col-md-6">
             <label for="isi_surat">Isi Surat</label>
             <textarea class="form-control" name="isi_surat" aria-label="With textarea" id="isi_surat" autocomplete="off"></textarea>
           </div>

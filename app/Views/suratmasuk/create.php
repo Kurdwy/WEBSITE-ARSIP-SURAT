@@ -2,6 +2,7 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
+  <h2><b>Mohon Input Dengan Benar</b></h2>
     <div class="card">
       <div class="card-header">
         <h3>Masukan Data Dengan Benar!</h3>
